@@ -1,0 +1,71 @@
+{
+	"TypeScript React Void Function Component": {
+		"prefix": "rvfc",
+		"body": [
+			"import React from 'react'",
+			"",
+			"interface ${TM_FILENAME_BASE}Props {",
+			"$1",
+			"}",
+			"",
+			"export const $TM_FILENAME_BASE: React.VFC<${TM_FILENAME_BASE}Props> = ({$2}) => {",
+			"\t\treturn ($3);",
+			"}"
+		],
+		"description": "Typescript React Void Function Component"
+	},
+	"TypeScript React Function Component": {
+		"prefix": "rfc",
+		"body": [
+			"import React from 'react'",
+			"",
+			"interface ${TM_FILENAME_BASE}Props {",
+			"$1",
+			"}",
+			"",
+			"export const $TM_FILENAME_BASE: React.FC<${TM_FILENAME_BASE}Props> = ({$2}) => {",
+			"\t\treturn ($3);",
+			"}",
+			""
+		],
+		"description": "Typescript React Function Component"
+	},
+	"TypeScript React JSX Function Component": {
+		"prefix": "rjsx",
+		"body": [
+			"import React from 'react'",
+			"",
+			"interface ${TM_FILENAME_BASE}Props {",
+			"$1",
+			"}",
+			"",
+			"export const $TM_FILENAME_BASE = ({$2}: ${TM_FILENAME_BASE}Props): JSX.Element => (",
+			"\t\t<div>",
+			"\t\t\t$0",
+			"\t\t</div>",
+			")",
+			""
+		],
+		"description": "Typescript React JSX Function Component"
+	},
+	"TypeScript Next Page": {
+		"prefix": "tsnp",
+		"body": [
+			"import { NextPage } from 'next'",
+			"",
+			"interface ${TM_FILENAME_BASE}Props {",
+			"",
+			"}",
+			"",
+			"export const ${1:${TM_FILENAME_BASE}}: NextPage<${TM_FILENAME_BASE}Props> = () => {",
+			"\treturn (",
+			"\t\t<div>",
+			"\t\t\t$0",
+			"\t\t</div>",
+			"\t)",
+			"}",
+			""
+		],
+		"description": "TypeScript Next Page With Interface"
+	}
+}
